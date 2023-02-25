@@ -1,0 +1,1 @@
+porttYapi.exe --ip 192.168.100.12 --hport 8888 --cport com7 --debug True
