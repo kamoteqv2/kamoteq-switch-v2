@@ -1,0 +1,12 @@
+{"pinNum":14,"setMod":1}
+{"pinNum":14,"getMod":1}
+{"x":1}
+{"dht":1}
+{"nfo":1}
+{"porttYapi":1}
+{"ssid":"mywifiSSID","password":"mypassword"}
+{"devicename":"mydevicename"}
+{"erasepins":1}
+{"erasewifi":1}
+{"erase":1} 
+{"rst":1}
