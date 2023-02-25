@@ -1,0 +1,27 @@
+UID: http:url:ec0d170411
+label: A-DHT
+thingTypeUID: http:url
+configuration:
+  authMode: BASIC
+  ignoreSSLErrors: false
+  baseURL: http://192.168.100.2/500291dd0ff7/json/dht/
+  delay: 0
+  stateMethod: GET
+  refresh: 5
+  commandMethod: GET
+  contentType: application/json
+  timeout: 3000
+  bufferSize: 2048
+channels:
+  - id: temp
+    channelTypeUID: http:number
+    label: temp
+    description: null
+    configuration:
+      stateTransformation: JSONPATH:$.temp
+  - id: hum
+    channelTypeUID: http:number
+    label: hum
+    description: null
+    configuration:
+      stateTransformation: JSONPATH:$.hum

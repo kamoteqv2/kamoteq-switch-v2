@@ -1,0 +1,25 @@
+UID: http:url:a71d9d174b
+label: POST-SWITCH-ARDUINO
+thingTypeUID: http:url
+configuration:
+  authMode: BASIC
+  ignoreSSLErrors: true
+  headers:
+    - ""
+  baseURL: http://192.168.100.210/deadbeeffeed/json/
+  delay: 0
+  stateMethod: POST
+  refresh: 5
+  commandMethod: POST
+  contentType: application/json
+  timeout: 3000
+  bufferSize: 2048
+channels:
+  - id: sw1
+    channelTypeUID: http:switch
+    label: sw1
+    description: ""
+    configuration:
+      onValue: '{"pinNum":7,"setMod":1}'
+      offValue: '{"pinNum":7,"setMod":0}'
+      stateContent: '{"pinNum":7,"getMod":1}'
