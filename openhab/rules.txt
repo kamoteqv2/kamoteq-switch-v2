@@ -1,0 +1,22 @@
+configuration: {}
+triggers:
+  - id: "4"
+    configuration:
+      itemName: sensor_temp
+      previousState: ""
+    type: core.ItemStateChangeTrigger
+conditions:
+  - inputs: {}
+    id: "5"
+    configuration:
+      itemName: sensor_temp
+      state: "24"
+      operator: <
+    type: core.ItemStateCondition
+actions:
+  - inputs: {}
+    id: "6"
+    configuration:
+      itemName: switch14_sw14
+      command: OFF
+    type: core.ItemCommandAction
